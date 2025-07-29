@@ -1,13 +1,13 @@
 [build-system]
-requires 		= ["setuptools>=61.0"]
+requires 		= ["setuptools>=61.0", "wheel"]
 build-backend 	= "setuptools.build_meta"
 
 [project]
 name 			= "PyApso"
-version 		= "1.0.0"
+version 		= "1.0.3"
 description 	= "Adaptive Particle Swarm Optimization for continuous, multi-objective, and multidimensional problems"
-authors 		= [{ name = "SMH Abedy", email = "m.h.o.abedu@gmail.com" }]
-
+readme 			= "README.md"
+keywords 		= ["optimization", "particle swarm optimization", "APSO", "metaheuristic"]
 requires-python = ">=3.6"
 dependencies 	= [
     "numpy",
@@ -18,3 +18,5 @@ dependencies 	= [
 [project.urls]
 Homepage 		= "https://github.com/smohamadabedy/pyapso"
 Documentation 	= "https://github.com/smohamadabedy/pyapso#readme"
+Source 			= "https://github.com/smohamadabedy/pyapso"
+Issues 			= "https://github.com/smohamadabedy/pyapso/issues"
