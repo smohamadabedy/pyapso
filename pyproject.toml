@@ -1,0 +1,20 @@
+[build-system]
+requires 		= ["setuptools>=61.0"]
+build-backend 	= "setuptools.build_meta"
+
+[project]
+name 			= "PyApso"
+version 		= "1.0.0"
+description 	= "Adaptive Particle Swarm Optimization for continuous, multi-objective, and multidimensional problems"
+authors 		= [{ name = "SMH Abedy", email = "m.h.o.abedu@gmail.com" }]
+
+requires-python = ">=3.6"
+dependencies 	= [
+    "numpy",
+    "tqdm",
+    "matplotlib"
+]
+
+[project.urls]
+Homepage 		= "https://github.com/smohamadabedy/pyapso"
+Documentation 	= "https://github.com/smohamadabedy/pyapso#readme"
