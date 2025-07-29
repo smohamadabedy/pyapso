@@ -1,4 +1,4 @@
-from .pyapso import APSO
+from src_pyapso import APSO
 import numpy as np
 
 def fitness(x):

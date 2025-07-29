@@ -417,8 +417,10 @@ class APSO:
             
         if self.live_plot:
             self._update_plot()
-
-        tqdm.write(f"Iter {iteration+1}/{self.max_iter}, Best Position: {','.join(f"{x:.3f}" for x in global_best.tolist())}, Best Score: {global_best_score:.4f}, Mean Score: {np.mean(fitness):.4f}")
+        
+        
+        formatted_position = ",".join(f"{x:.3f}" for x in global_best.tolist())
+        tqdm.write(f"Iter {iteration+1}/{self.max_iter}, Best Position: {formatted_position}, Best Score: {global_best_score:.4f}, Mean Score: {np.mean(fitness):.4f}")
    
     # common destructor
     def _OP_end(self,global_best_score):
